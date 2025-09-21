@@ -1,0 +1,48 @@
+name: Refresh Stats Cache-Buster
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour at minute 0
+  workflow_dispatch:      # manual run option
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # required to push with GITHUB_TOKEN
+
+      - name: Make timestamp
+        id: ts
+        run: echo "TS=$(date -u +%s)" >> $GITHUB_OUTPUT
+
+      - name: Update README cache-buster for streak/trophy
+        run: |
+          README="README.md"
+          TS="${{ steps.ts.outputs.TS }}"
+
+          # Replace existing &v=NUMBER or append &v=TS if not present
+          # Update streak-stats URL
+          sed -E -i.bak -E "s|(streak-stats.demolab.com\?[^\"' ]*?)(&v=[0-9]+)?|\1&v=${TS}|g" "$README"
+
+          # Update github-profile-trophy URL similarly
+          sed -E -i.bak -E "s|(github-profile-trophy.vercel.app\?[^\"' ]*?)(&v=[0-9]+)?|\1&v=${TS}|g" "$README"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet; then
+            echo "No changes to commit."
+          else
+            git add "$README"
+            git commit -m "chore: bump stats cache-buster ($TS)"
+            git push
+          fi
+
+      - name: Clean up
+        run: rm -f README.md.bak || true
