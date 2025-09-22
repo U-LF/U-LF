@@ -44,7 +44,7 @@
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=U-LF&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3streak-stats.demolab.com?user=U-LF&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3v=1758557750" height="150" alt="streak graph"  />
-  <img src="https://github-profile-trophy.vercel.app?username=U-LF&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4github-profile-trophy.vercel.app?username=U-LF&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4v=1758557750" height="150" alt="trophy graph"  />
+  <img src="https://github-profile-trophy.vercel.app/?username=U-LF&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4github-profile-trophy.vercel.app?username=U-LF&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4v=1758557750" height="150" alt="trophy graph"  />
 </div>
 
 ###
@@ -56,3 +56,4 @@
 </picture>
 
 ###
+
