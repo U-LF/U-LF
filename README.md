@@ -43,8 +43,8 @@
 ###
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=U-LF&cache_seconds=1800" height="200" alt="streak graph"  />
-  <img src="https://github-profile-trophy.vercel.app/?username=U-LF&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" height="200" alt="trophy graph"  />
+  <img src="https://nirzak-streak-stats.vercel.app/?user=U-LF&cache_seconds=1800&theme=dracula&hide_border=false"  />
+  <img src="https://github-profile-trophy.vercel.app/?username=U-LF&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" alt="trophy graph"  />
 </div>
 
 ###
@@ -56,6 +56,7 @@
 </picture>
 
 ###
+
 
 
 
