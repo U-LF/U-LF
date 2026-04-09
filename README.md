@@ -43,7 +43,7 @@
 ###
 
 <div align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=U-LF&cache_seconds=1800&theme=dracula&hide_border=false"  />
+  <img src="https://streak-stats.demolab.com/?user=U-LF&theme=dracula&hide_border=false"  />
   <br><br>
   <img src="https://github-profile-trophy.screw-hand.vercel.app/?username=u-lf&rank=-UNKNOWN,-C&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" alt="trophy graph"  />
 </div>
